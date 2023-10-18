@@ -3,13 +3,11 @@
     hosts: localhost
     gather_facts: yes
     vars:
-      custom_heading: "Welcome To DevOps Training B15 By Sreeharsha Veerapalli - Testing AWX"
+      custom_heading: "Welcome To Telugu AWS Training B43 By Sreeharsha Veerapalli - Autoscaling Testing"
       todays_date: "{{ ansible_facts['date_time']['date'] }}"
       host_name: "{{ ansible_facts['hostname'] }}"
       fqdn_name: "{{ ansible_facts['fqdn'] }}"
       ip_address: "{{ ansible_facts['eth0']['ipv4']['address'] }}"
-      #os_family: "{{ ansible_facts['os_family'] }}"
-      #os_dest: "{{ ansible_facts['distribution_version'] }}"
     tasks:
        - name: Run Apt Update
          shell: apt update && apt install -y python3-apt
