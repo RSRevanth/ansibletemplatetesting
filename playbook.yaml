@@ -1,6 +1,6 @@
 ---
   - name: Play for Install Nginx on WebServers
-    hosts: localhost
+    hosts: all
     gather_facts: yes
     vars:
       custom_heading: "Welcome To Telugu AWS Training B30 By Sreeharsha Veerapalli - Autoscaling Testing"
